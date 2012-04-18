@@ -1,0 +1,16 @@
+1. Unpack MongoDB distribution
+
+
+2. Import tweets data by running this command line :
+
+    mongoimport --upsert -d devoxx -c tweets --drop --jsonArray tweets.json
+
+
+3. Try MongoShell, run 'count' and 'find' operations with the following queries
+
+    db.tweets.count();
+    db.tweets.findOne({from_user:'ericlemerdy'});
+
+4. Implement 2 following tests  with mongo-java-driver
+
+5. Had a look at WithJongoTest and WithMorphiaTest to see mongo-java-driver alternatives
