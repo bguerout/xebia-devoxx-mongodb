@@ -5,7 +5,7 @@ import com.google.code.morphia.annotations.Property;
 
 import java.util.Date;
 
-@Entity("tweets")
+@Entity("fresh-tweets")
 public class MorphiaTweet {
 
     @Property("from_user_id")

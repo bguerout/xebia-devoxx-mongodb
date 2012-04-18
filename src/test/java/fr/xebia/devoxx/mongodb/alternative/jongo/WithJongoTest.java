@@ -21,7 +21,7 @@ public class WithJongoTest {
         Mongo mongo = new Mongo("127.0.0.1", 27017);
         DB db = mongo.getDB("devoxx");
         Jongo jongo = new Jongo(db);
-        collection = jongo.getCollection("tweets");
+        collection = jongo.getCollection("fresh-tweets");
     }
 
     @Test
