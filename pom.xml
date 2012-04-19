@@ -47,6 +47,14 @@
     </dependency>
   </dependencies>
 
+ <repositories>
+    <repository>
+      <id>morphia-googlecode</id>
+      <name>Morphia Repository</name>
+      <url>https://morphia.googlecode.com/svn/mavenrepo</url>
+    </repository>
+  </repositories>
+
   <build>
     <plugins>
       <plugin>

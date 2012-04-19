@@ -47,7 +47,7 @@ public class SolvedTest {
 
         String from_user_id = (String) result.get("from_user_id");
         String from_user_name = (String) result.get("from_user_name");
-        Date created_at = new Date((Long) result.get("created_at"));
+        Date created_at = (Date) result.get("created_at");
         String text = (String) result.get("text");
 
         Tweet tweet = new Tweet(from_user_id, from_user_name, created_at, text);
