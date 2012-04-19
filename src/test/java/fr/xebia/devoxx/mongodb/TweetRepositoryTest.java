@@ -8,11 +8,14 @@ import org.junit.Test;
 import java.util.Date;
 
 /*
-1. Unpack MongoDB distribution
+1. Unpack distribution and start MongoDB
+
+    mkdir data
+    ./mongod --dbpath ./data
 
 2. Import tweets data by running this command line :
 
-    mongoimport --upsert -d devoxx -c tweets --drop --jsonArray tweets.json
+    ./mongoimport --upsert -d devoxx -c tweets --drop --jsonArray tweets.json
 
 
 3. Try MongoShell, run 'count' and 'find' operations with the following queries
